@@ -4,5 +4,6 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/flask4" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/flask5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/flask6" vcs="Git" />
   </component>
 </project>
