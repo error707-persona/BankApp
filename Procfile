@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:5000 app:run
+web: gunicorn app:run --log-file=-
