@@ -36,6 +36,8 @@ def customers():
                     if session['current_balance'] < int(transferForm.amount.data):
                         flash('Invalid Transaction: Not enough balance in your account', category='danger')
                     else:
+                        update = User_this.query.filter_by(account_no=transferForm.account.data).first()
+                        cut = User_this.query.filter_by(account_no=int(session['account_no'])).first()
                         update.current_balance = update.current_balance + int(transferForm.amount.data)
                         cut.current_balance = cut.current_balance - int(transferForm.amount.data)
                         session['current_balance'] = cut.current_balance
