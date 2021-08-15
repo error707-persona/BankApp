@@ -65,6 +65,24 @@ Customers
          </div>
       {% endfor %}
    </div>
+      Received Trasactions: <br> <br>
+      <div class="row">
+         {% for rec in transac %}
+         <div class="col-md-6">
+            <div style="margin-bottom: 5px" class="card text-center bg-dark">
+               <div class="card-body">
+                  From: {{ rec.fromm }}<br>
+                  <hr>
+                  To: {{ session['name'] }}<br>
+                  <hr>
+                  Amount: {{ rec.amount }}<br>
+                  <hr>
+                  Date: {{  rec.date }}
+               </div>
+            </div>
+         </div>
+      {% endfor %}
+      </div>
    </div>
 </div>
 {% endblock %}
