@@ -20,11 +20,11 @@
             {{ transferForm.hidden_tag() }}
           <div class="form-group">
               {{ transferForm.account.label() }}
-              {{ transferForm.account(class="form-control", value=item.account_no) }}
+              {{ transferForm.account(class="form-control", value=item.account_no, disable=True) }}
           </div>
             <div class="form-group">
               {{ transferForm.bankname.label() }}
-              {{ transferForm.bankname(class="form-control", value=item.bankname) }}
+              {{ transferForm.bankname(class="form-control", value=item.bankname, disable=True) }}
             </div>
             <div class="form-group">
               {{ transferForm.amount.label() }}
